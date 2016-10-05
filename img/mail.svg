@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="22px" height="15px" viewBox="0 0 22 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40 (33762) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Website-Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Massive-SMS" transform="translate(-521.000000, -1033.000000)" fill="#757575">
+            <g id="Introducción" transform="translate(250.000000, 710.000000)">
+                <g id="Group-12" transform="translate(240.000000, 251.000000)">
+                    <g id="email" transform="translate(31.000000, 72.000000)">
+                        <g id="Outline_Icons">
+                            <path d="M20,0 L2,0 C0.897,0 0,0.896 0,2 L0,13 C0,14.103 0.897,15 2,15 L20,15 C21.103,15 22,14.103 22,13 L22,2 C22,0.896 21.103,0 20,0 L20,0 Z M20,1 C20.057,1 20.105,1.023 20.159,1.032 L11,8.36 L1.841,1.032 C1.895,1.023 1.943,1 2,1 L20,1 L20,1 Z M21,13 C21,13.551 20.551,14 20,14 L2,14 C1.449,14 1,13.551 1,13 L1,2 C1,1.891 1.03,1.79 1.062,1.69 L10.687,9.39 C10.779,9.463 10.89,9.5 11,9.5 C11.11,9.5 11.221,9.463 11.312,9.391 L20.937,1.691 C20.97,1.79 21,1.891 21,2 L21,13 L21,13 Z" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

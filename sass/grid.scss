@@ -1,0 +1,32 @@
+@import 'mixins';
+
+.Container {
+  margin: 0 auto;
+  max-width: 940px;
+  padding: 0 24px;
+}
+.Container--home {
+  position: relative;
+}
+
+.Grid-container {
+  @include flex-wrap(wrap);
+  margin: 0 -10px 10px;
+}
+.Grid-container--noMargin {
+  margin-bottom: 0;
+}
+
+.Grid-column {
+  margin: 0 10px;
+}
+.Grid-1 {
+  @include flex(1);
+}
+
+@for $i from 1 through 12 {
+  .Grid-column--#{$i} {
+    width: (60px * $i) + ($i * 20px) - 20px;
+  }
+}
+

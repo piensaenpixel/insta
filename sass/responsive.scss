@@ -1,0 +1,330 @@
+@import 'typography';
+@import 'mixins';
+@import 'colors';
+@media (max-width: 940px) {
+  .Menu-item {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 850px) {
+  .Header-homeMedia {
+    top: 50px;
+    right: -104%;
+    width: 151%;
+  }
+}
+@media (max-width: 830px) {
+  .Menu-item {
+    margin-left: 12px;
+  }
+}
+
+
+
+
+@media (max-width: 759px) {
+  .Header-homeMedia {
+    display: none;
+  }
+  .section {
+    padding: 48px 0;
+  }
+  .Browser-media img {
+    width: 100%;
+  }
+  .Browser-tabs {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+  }
+  .Browser--right {
+    width: 100%;
+    margin: 40px 10px 30px 10px
+  }
+  @for $i from 1 through 38 {
+    .u-bSpace--#{$i} {
+      margin-bottom: (2px * $i);
+    }
+    .u-rSpace--#{$i} {
+      margin-right: (2px * $i);
+    }
+    .u-lSpace--#{$i} {
+      margin-left: (2px * $i);
+    }
+    .u-tSpace--#{$i} {
+      margin-top: (2px * $i);
+    }
+  }
+  .section--useCases {
+    background: none;
+    img {
+      width: 100%;
+      margin-left: -100px;
+      margin-bottom: 40px;
+    }
+    .u-flex {
+      display: block;
+    }
+  }
+  .Grid-column.list-industriesitem {
+    margin-bottom: 48px;
+  }
+  .Footer-list {
+    margin-bottom: 40px;
+  }
+  .Footer-suscription .Container {
+    @include flex-direction(column);
+  }
+  .Footer-suscription .Footer-form {
+    margin-bottom: 40px;
+  }
+  pre.line-numbers {
+    padding-left: 0 !important;
+  }
+  code[class*=language-], pre[class*=language-] {
+    white-space: pre-wrap !important;
+  }
+  .Module-blogContainer {
+    @include flex-direction(column);
+    .section--dark {
+      min-height: 520px;
+    }
+  }
+  .Module-blog {
+    margin: 0;
+    padding: 0 24px;
+  }
+  .Module-blogMedia {
+    min-height: 400px;
+  }
+  .IndustriesList-itemDescription {
+    display: block;
+  }
+  .ContactForm {
+    box-shadow: 0 0 0;
+    margin: 0 -24px;
+    border-radius: 0;
+  }
+  .ContactForm-info {
+    order: 1;
+  }
+  .ContactForm-inner {
+    order: 0;
+  }
+  .Button {
+    width: 100%;
+  }
+  .Header--contact {
+    padding-top: 0;
+  }
+  .Header {
+    margin-top: 0;
+    padding: 120px 0 64px 0;
+  }
+  .Header-container {
+    margin: 0;
+  }
+  .Carousel-homeActions {
+    @include flex-direction(column);
+    width: 100%;
+  }
+  .list-buttonsitem {
+    margin-right: 0;
+    margin-bottom: 24px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+
+  @for $i from 1 through 12 {
+    .Grid-column--#{$i} {
+      width: 100%;
+    }
+  }
+  .Grid-column {
+    margin: 0;
+  }
+  .Grid-container {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .RatesInfo-list {
+    flex-direction: column;
+  }
+  .RatesInfo-listItem {
+    margin: 24px 0 0 0;
+  }
+  .RatesInfo-number--yellow {
+    margin-right: 32px;
+  }
+  .u-alignCenter {
+    @include flex-direction(flex-start);
+    @include align-items(flex-start);
+  }
+  .ListFeatures-item {
+    margin-bottom: 32px !important;
+  }
+  .Performance-listDescription {
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+  .List-buttons {
+    @include flex-direction(column);
+  }
+  .RatesInfo {
+    width: 100%;
+  }
+  .RatesInfo-form {
+    @include flex-direction(column);
+    width: 100%;
+  }
+  .RatesInfo-formStep {
+    width: 100%;
+    margin: 0 0 24px 0 !important;
+  }
+  .slider {
+    width: 100%;
+    margin-bottom: 32px;
+  }
+  .Box-inner {
+    padding: 24px;
+  }
+  .List-inputHLRItem {
+    margin-bottom: 24px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .Box--negative {
+    margin-top: 0;
+  }
+  .List-servicesItem {
+    @include flex-direction(column);
+  }
+  .Pricing-actions {
+    @include flex-direction(column);
+    .u-flex {
+      @include flex-direction(column);
+    }
+    .list-buttonsitem {
+      margin-bottom: 24px;
+    }
+  }
+  .List-stepsItem {
+    margin-bottom: 24px;
+  }
+  .u-alignCenter.Step {
+    @include align-items(center);
+  }
+  .Login {
+    background-image: none;
+  }
+  .Login .section {
+    padding-top: 120px;
+  }
+  .Login .u-bSpace--2 {
+    margin-bottom: 12px;
+  }
+  .Navigation {
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+
+    .Container {
+      padding: 0;
+      @include align-items(center);
+    }
+    .Menu {
+      display: none;
+    }
+  }
+  .NavigationMobile.is-open {
+    display: block;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.90);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 60px 28px 28px 28px;
+    z-index: 25;
+  }
+  .NavigationMobile-menu {
+    text-align: center;
+    font: 18px OpenSans;
+    a {
+      color: #fff
+    }
+  }
+  .NavigationMobile-menuItem {
+    margin-bottom: 40px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .NavigationMobile-menu--actions {
+    margin-top: 40px;
+    &:before {
+      width: 150px;
+      margin: 0 auto 40px auto;
+      height: 1px;
+      background: rgba(255, 255, 255, 0.10);
+      content: '';
+      display: block;
+    }
+  }
+  .NavigationMobile-close {
+    position: absolute;
+    right: 28px;
+    top: 28px;
+  }
+  .Hamburguer {
+    display: block;
+    cursor: pointer;
+  }
+  .Verify-item {
+    margin-bottom: 24px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    .Grid-column  {
+      @include justify-content(space-between);
+      margin-bottom: 10px;
+    }
+    .Grid-column--1 {
+      @include flex(1);
+      margin-left: 8px;
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+
+  .Footer-form {
+    @include display-flex();
+    @include justify-content(space-between);
+  }
+
+  .section-blog .owl-controls {
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 20px !important;
+  }
+  
+  .section-blog .owl-pagination {
+    @include justify-content(center);
+  }
+  .List-moduleDevelopersItem {
+    margin-bottom: 20px;
+  }
+  .Menu-docs {
+    margin: 140px 0 80px 0;
+  }
+
+  .IndustriesList-itemLink.u-alignCenter {
+    @include align-items(center);
+  }
+
+}

@@ -1,0 +1,105 @@
+@import 'sizes';
+@import 'colors';
+@import 'variables';
+
+@font-face {
+  font-family: 'brandon_textblack';
+  src: url('#{$routeFonts}/brandontext-black-webfont.woff2') format('woff2'),
+    url('#{$routeFonts}/brandontext-black-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'brandon_textbold';
+  src: url('#{$routeFonts}/brandontext-bold-webfont.woff2') format('woff2'),
+    url('#{$routeFonts}/brandontext-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'brandon_textmedium';
+  src: url('#{$routeFonts}/brandontext-medium-webfont.woff2') format('woff2'),
+    url('#{$routeFonts}/brandontext-medium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.p1 {
+  font: 400 18px/28px 'Open Sans';
+}
+
+.p2 {
+  font: 400 15px/24px 'Open Sans';
+}
+
+.pSmall{
+  font: 400 13px/24px 'Open Sans';
+}
+
+.title1 {
+  font: 40px/48px 'brandon_textblack';
+}
+
+.title2 {
+  font: 30px/40px 'brandon_textblack';
+}
+
+.title3 {
+  font: 22px/30px 'brandon_textbold';
+}
+
+.title4 {
+  font: 18px/30px 'brandon_textbold';
+}
+
+.title5 {
+  font: 15px/24px 'brandon_textbold';
+}
+
+.title6 {
+  font: 16px/24px 'brandon_textmedium';
+}
+
+.title5--spacing {
+  letter-spacing: 3px;
+}
+
+.txtpurple {
+  color: $purple;
+}
+
+.txtdark {
+  color: $dark;
+}
+
+.txtdark2 {
+  color: $dark2;
+}
+
+.txtdark3 {
+  color: $dark3;
+}
+
+.txtsoftgray {
+  color: $softgray;
+}
+
+.txtblue {
+  color: $blue;
+}
+
+.txtwhite {
+  color: $white;
+}
+
+.txtwhite60 {
+  color: rgba($white, .60);
+}
+
+.txtwhite50 {
+  color: rgba($white, .50);
+}
+

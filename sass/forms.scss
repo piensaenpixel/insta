@@ -1,0 +1,76 @@
+@import 'mixins';
+@import 'colors';
+@import 'variables';
+
+.LabelStep {
+  border-radius: 3px;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 13px 14px;
+  display: block;
+}
+  .LabelStep--editable {
+    background-image: url(#{$routeImages}/fnd-editable-input.svg);
+    background-repeat: no-repeat;
+    background-position: 93% 26px;
+    padding-right: 34px;
+  }
+  .LabelStep--white {
+    background-color: #FFFFFF;
+    border: 1px solid rgba(32,50,72,0.20);
+  }
+  .LabelStep--dark {
+    background-color: rgba(255, 255, 255, .05);
+    border: 1px solid rgba(255,255,255,0.20);
+  }
+
+.InputText {
+  font: 28px/36px 'brandon_textbold';
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background: transparent;
+  width: 100%;
+  &:focus {
+    outline: none;
+  }
+}
+
+
+  .InputText--auto {
+    width: auto;
+  }
+  .InputText--orange {
+    color: #FECB2B;
+  }
+  .InputText--white {
+    color: $white;
+  }
+
+  
+
+.RatesInfo-formStep {
+  width: 180px;
+  height: 64px;
+  position: relative;
+  margin-left: 24px;
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.LabelSelect {
+  height: 48px;
+}
+
+
+.FormRegular .LabelStep {
+  box-shadow: inset 0px 2px 1px 0px rgba(0,0,0,0.05);
+  border-radius: 3px;
+}
+.FormRegular .InputText {
+  font: 15px/20px 'Open Sans'
+}
+.FormRegular .digits {
+  text-align: center;
+}

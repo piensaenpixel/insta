@@ -1,0 +1,35 @@
+@import 'typography';
+@import 'mixins';
+@import 'colors';
+@import 'variables';
+
+
+.Login {
+  background-color: $softgray;
+  background-image: url(#{$routeImages}/fnd_iphone.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+
+}
+
+.Login .Menu-item a,
+.Login .Button-secondary {
+  color: $bgdarkgrey;
+}
+
+.Login .LabelStep {
+  box-shadow: inset 0px 2px 1px 0px rgba(0,0,0,0.05);
+  border-radius: 3px;
+}
+.Login .InputText {
+  font: 15px/20px 'Open Sans'
+}
+.Login-confirmItem {
+  width: 89px;
+  margin-left: 8px;
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+
