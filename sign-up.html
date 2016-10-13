@@ -19,12 +19,15 @@
   <script src="js/app.js"></script>
   <script src="js/nouislider.min.js"></script>
   <script src="js/prism.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+
 
   <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
   <link href="css/select2.css" rel="stylesheet" />
   <link href="css/responsive.css" rel="stylesheet" />
-
+  <link href="css/owl.theme.css" rel="stylesheet" />
+  <link href="css/owl.carousel.css" rel="stylesheet" />
 
 </head>
 
@@ -68,16 +71,50 @@
             </label>
             <button class="Button Button--full Button--purple">Log in</button>
           </form>
-          <p class="u-tSpace--6 pSmall txtdark3 u-bSpace--32">Al hacer click en el botón de registrarse o utilizar nuestros servicios, usted reconocer haber leído, entendido y aceptado nuestros Terminos y condiciones y Política de privacidad.</p>
-          <div class="u-bSpace--4">
-            <img src="img/phone.svg">
-          </div>
-          <h3 class="title4 txtdark2 u-bSpace--2">Informes de entrega en tiempo real</h3>
-          <p class="p2 txtdark2">Date de alta en Instasent y envía mensajes ahora desde nuestro Dashboard o desde nuestra API.</p>
+          <p class="u-tSpace--6 pSmall txtdark3 u-bSpace--20">Al hacer click en el botón de registrarse o utilizar nuestros servicios, usted reconocer haber leído, entendido y aceptado nuestros <A href="#">Terminos y condiciones</a> y <a href="#">Política de privacidad</a>.</p>
+
         </div>
       </div>
     </div>
   </section>
+  <section class="section--negative">
+    <div class="Container">
+      <div class="u-flex Grid-container u-bSpace--10">
+        <div class="Grid-column Grid-column--5">
+          <ul id="login-info" class="owl-carousel owl-theme owl-theme--paginationBlack">
+            <li>
+              <div class="u-bSpace--4">
+                <img src="img/phone.svg">
+              </div>
+              <h3 class="title4 txtdark2 u-bSpace--2">Informes de entrega en tiempo real</h3>
+              <p class="p2 txtdark2">Date de alta en Instasent y envía mensajes ahora desde nuestro Dashboard o desde nuestra API.</p>
+            </li>
+            <li>
+              <div class="u-bSpace--4">
+                <img src="img/phone.svg">
+              </div>
+              <h3 class="title4 txtdark2 u-bSpace--2">Informes de entrega en tiempo real</h3>
+              <p class="p2 txtdark2">Date de alta en Instasent y envía mensajes ahora desde nuestro Dashboard o desde nuestra API.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <script>
+    $(document).ready(function() {
+     
+      $("#login-info").owlCarousel({
+          slideSpeed : 300,
+          paginationSpeed : 400,
+          navigation : false,
+          singleItem:true     
+      });
+    });
+  </script>
 
 
 </body>

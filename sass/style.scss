@@ -135,6 +135,10 @@
   padding: 20px 24px;
   position: relative;
   z-index: 10;
+  &.Navigation--dark {
+    background: #45364B;
+    padding: 18px 24px;
+  }
   .Container {
     padding: 0;
   }
@@ -158,7 +162,7 @@
   background: #fff;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   z-index: 20;
-  .Brand path {
+  .Brand path, #hook {
     fill: #203248;
   }
   .Menu-item a {
@@ -171,7 +175,7 @@
       border-right: 6px solid rgba(0,0,0,0.05)
     }
   }
-  .Button--signup {
+  a.Button--signup {
     background: $purple;
     color: $white;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
@@ -228,6 +232,11 @@
   }
   .Hamburguer-lines {
     fill: #203248;
+  }
+  &.is-fixed {
+    .Button--signup {
+      color: #fff;
+    }
   }
 }
 
@@ -429,6 +438,35 @@ a.list-industriesitemlink {
 
 
 /*  Footer */
+.Country-selector {
+  font: 400 13px/15px 'Open Sans';
+
+  .select2-container--default .select2-selection--single {
+    outline: none;
+  }
+
+  .select2-container {
+    padding: 2px 0 !important; 
+  }
+  .select2-search--dropdown {
+    padding: 8px !important;
+  }
+  .select2-search__field {
+    padding: 0 !important;
+  }
+  .select2-container--default .select2-search--dropdown .select2-search__field {
+    padding: 0 !important;
+  }
+  .select2-container--default .select2-selection--single .select2-selection__arrow {
+    top: 4px !important;
+  }
+  .select2-container .select2-selection--single {
+    height: 32px;
+  }
+
+} 
+
+
 .Footer-suscription {
   padding: 60px 0;
   background: $softgray;
@@ -590,6 +628,7 @@ a.list-industriesitemlink {
   position: relative;
   top: -8px;
   z-index: 10;
+  margin-left: -10px;
 }
 
 .noUi-origin {
@@ -832,8 +871,8 @@ pre[class*=language-], .token.operator{
 .section-blog .owl-controls {
   position: absolute !important;
   z-index: 10 !important;
-  bottom: 60px !important;
-  left: calc(50% + 83px) !important;
+  bottom: -160px !important;
+  left: 90px !important;
   padding-top: 40px;
   border-top: 1px solid rgba(255, 255, 255, .1);
   width: 390px;
@@ -855,6 +894,9 @@ pre[class*=language-], .token.operator{
   @include display-flex();
   @include align-items(center);
 }
+
+
+
 
 .Header-homeMedia {
   position: absolute;
@@ -893,11 +935,13 @@ pre[class*=language-], .token.operator{
 }
 .Menu-docsItemTitle {
   margin-bottom: 4px;
-  font-weight: 600;
   padding-left: 20px;
   background-image: url(#{$routeImages}/developers/menu.svg);
   background-repeat: no-repeat;
   background-position: 0 8px;
+  a {
+    font-weight: 600;
+  }
   &.is-active {
     background-image: url(#{$routeImages}/developers/menu-active.svg);
     a {
@@ -914,37 +958,290 @@ pre[class*=language-], .token.operator{
   a {
     color: $blue;
   }
-}
-.Docs-list {
-  list-style-type: disc;
-  padding-left: 16px;
-}
-.Docs-code {
-  background: rgba(255, 255, 255, 0.06);
-  border-radius: 4px;
-  padding: 0 20px;
-}
-
-.line-numbers .line-numbers-rows {
-  font-size: 14px
-}
-
-.Docs-codeSmall {
-  background: rgba(255, 255, 255, 0.06);
-  border-radius: 4px;
-  padding: 2px 4px;
-  font-family: 'Monospace'
-}
-.Docs-table {
-  width: 100%;
-  th {
-    color: $white;
-    text-align: left;
+  ul {
+    list-style-type: disc;
+    padding-left: 16px;
+    font: 15px/24px 'Open Sans';
+    color: #6A7785;
+    margin-bottom: 12px;
+    li {
+      margin-bottom: 12px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
   }
-  td, th{
-    padding: 12px 12px 12px 0;
-    min-width: 140px;
-    box-sizing: border-box;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.10)
+  h1 {
+    font: 23px/40px 'brandon_textblack';
+    font-size: 30px;
+    color: #203248;
+    margin-bottom: 12px;
+    + p {
+      font: 18px/28px 'Open Sans';
+      color: #203248;
+    }
+  }
+  h2 {
+    font: 22px/30px 'brandon_textbold';
+    color: #203248;
+    line-height: 30px;
+    margin-top: 60px;
+    margin-bottom: 12px;
+  }
+  h3 {
+    font: 18px/30px 'BrandonText-Bold';
+    color: #6A7785;
+    margin-bottom: 12px;
+    > span {
+      font-family: 'Monospace', PTMono-Regular;
+      font-size: 15px;
+      color: #6A7785;
+      display: inline-block;
+      padding: 4px;
+      border-radius: 2px;
+      background: #F1F2F3 !important;
+      line-height: 1;
+    }
+  }
+  h4 {
+    font: 15px/24px 'BrandonText-Bold';
+    color: #6A7785;
+    margin-bottom: 12px;
+  }
+  p {
+    font: 15px/24px 'Open Sans';
+    margin-bottom: 12px;
+    color: #6A7785;
+  }
+  pre {
+    background: #F1F2F3 !important;
+    border-radius: 4px;
+    padding: 2px 12px !important ;
+    display: inline-block !important;
+    > code {
+      font-family: 'Monospace', PTMono-Regular !important;
+      font-size: 15px;
+      color: #6A7785 !important;
+    }
+
+    &.line-numbers {
+      padding: 20px 20px 20px 54px !important ;
+      display: block !important;
+      code[class*=language-],
+      > code > span {
+        font-size: 13px !important;
+        color: #2E3C43 !important;
+      }
+    }
+    
+  }
+  table {
+    width: 100%;
+    margin-bottom: 12px;
+    th {
+      text-align: left;
+    }
+    td, th{
+      padding: 12px 12px 12px 0;
+      min-width: 140px;
+      box-sizing: border-box;
+      border-bottom: 1px solid #ddd;
+    }
+    th {
+      padding-top: 0;
+      font: 15px/24px 'Open Sans';
+      color: #203248;
+    }
+    td {
+      font: 15px/24px 'Open Sans';
+      color: #6A7785;
+    } 
+  }
+  .line-numbers .line-numbers-rows {
+    font-size: 13px;
+    top: -4px;
+    line-height: 1.9em;
+  }
+
+  .Docs-codeSmall {
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 4px;
+    padding: 2px 4px;
+    font-family: 'Monospace'
+  }
+}
+
+
+
+
+
+
+
+.owl-theme--paginationBlack {
+  .owl-controls .owl-page.active span {
+    border: 1px solid #B5BBC2 !important;
+  }
+  .owl-controls .owl-page span {
+    background: #B5BBC2 !important;
+  }
+  .owl-controls .owl-page span {
+    margin-left: 0 !important;
+  }
+}
+
+.owl-theme--paginationPurple {
+  .owl-controls .owl-page.active span {
+    border: 1px solid #7A64B0 !important;
+  }
+  .owl-controls .owl-page span {
+    background: #7A64B0 !important;
+  }
+  .owl-controls .owl-page span {
+    margin-left: 0 !important;
+  }
+}
+
+
+
+.Blog-header {
+  margin-bottom: 32px;
+  .img-responsive {
+    width: 100%;
+  }
+}
+
+.Blog-contain {
+  font-family: 'Open Sans';
+  a {
+    color: #00a8ff !important;
+  }
+  p {
+    margin: 0 0 12px 0;
+    color: $dark2;
+    font: 15px/24px 'Open Sans'
+  }
+  h3 {
+    font: 400 18px/28px 'Open Sans';
+    color: $dark;
+    margin: 24px 0 12px 0;
+  }
+  h2 {
+    line-height: 1.2em;
+    color: $dark;
+    margin: 0 0 32px 0;
+  }
+  .img-responsive {
+    width: 100%;
+    margin: 24px 0;
+  }
+  blockquote {
+    padding: 12px 24px;
+    margin: 0 0 24px;
+    font-size: 20px;
+    border-left: 5px solid #eeeeee;
+    p {
+      font: 400 18px/28px 'Open Sans';
+      color: $dark;
+    }
+  }
+  hr {
+    border: 0;
+    border-top: 1px solid #eeeeee;
+  }
+  .mt {
+    padding-top: 32px;
+  }
+}
+
+.ContactList-item {
+  flex: 1;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  border-left: 1px solid #f5f5f5;
+  text-align: center;
+  &:first-child {
+    border-left: 0;
+  }
+}
+
+
+.Industries-contain {
+  font-family: 'Open Sans';
+  a {
+    color: #00a8ff !important;
+  }
+  p {
+    margin: 0 0 12px 0;
+    color: $dark2;
+    font: 15px/24px 'Open Sans'
+  }
+  h3 {
+    font: 400 18px/28px 'Open Sans';
+    color: $dark;
+    margin: 24px 0 12px 0;
+  }
+  h2 {
+    line-height: 1.2em;
+    color: $dark;
+    margin: 0 0 32px 0;
+  }
+  .img-responsive {
+    width: 100%;
+    margin: 24px 0;
+  }
+  blockquote {
+    padding: 12px 24px;
+    margin: 0 0 24px;
+    font-size: 20px;
+    border-left: 5px solid #eeeeee;
+    p {
+      font: 400 18px/28px 'Open Sans';
+      color: $dark;
+    }
+  }
+  hr {
+    border: 0;
+    border-top: 1px solid #eeeeee;
+    margin: 48px 0;
+  }
+
+  ul {
+    margin-left: 32px;
+    margin-bottom: 48px;
+  }
+  li {
+    margin: 0 0 4px 0;
+    color: $dark2;
+    font: 15px/24px 'Open Sans'
+  }
+  .row {
+    margin: 0 -20px 12px -20px;
+    color: $dark2;
+    font: 15px/24px 'Open Sans';
+    display: flex;
+    .col-sm-6 {
+      margin: 0 20px;
+    }
+  }
+  .progress {
+    background: #f8f9fa;
+    height: 10px;
+    box-shadow: none;
+    overflow: hidden;
+    margin-bottom: 24px;
+    border-radius: 3px;
+  }
+  .progress-bar {
+    float: left;
+    width: 0%;
+    height: 100%;
+    font-size: 14px;
+    line-height: 24px;
+    color: #e4e5e6;
+    text-align: center;
+  }
+  .progress-bar-sms {
+    background: #35aed0;
+    box-shadow: none;
   }
 }

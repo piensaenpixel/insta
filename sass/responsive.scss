@@ -308,9 +308,9 @@
   }
 
   .section-blog .owl-controls {
-    left: 0 !important;
-    right: 0 !important;
-    bottom: 20px !important;
+    left: 20px !important;
+    right: 20px !important;
+    width: auto;
   }
   
   .section-blog .owl-pagination {
@@ -325,6 +325,20 @@
 
   .IndustriesList-itemLink.u-alignCenter {
     @include align-items(center);
+  }
+
+  .ContactList {
+    flex-direction: column;
+    .ContactList-item {
+      border-left: 0;
+      border-top: 1px solid #f5f5f5;
+      &:first-child {
+        border-top: 0;
+      }
+    }
+  }
+  .LabelStep-error .LabelStep-errorInfo {
+    display: none;
   }
 
 }

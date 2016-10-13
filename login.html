@@ -60,13 +60,20 @@
       <div class="u-flex Grid-container">
         <div class="Grid-column Grid-column--5">
           <form>
-            <label class="LabelStep  LabelStep--white u-bSpace--2">
+            <label class="LabelStep  LabelStep--white u-bSpace--2 LabelStep-error">
               <input class="InputText" type="text" placeholder="Email" />
+              <p class="LabelStep-errorInfo p2 txtwhite">
+                el correo no es válido
+              </p>
             </label>
             <label class="LabelStep  LabelStep--white u-bSpace--2">
               <input class="InputText" type="text" placeholder="password" />
             </label>
-            <button class="Button Button--full Button--purple">Log in</button>
+            <button class="Button Button--full Button--purple u-bSpace--6">Log in</button>
+            <p class="p2 txtdark2 u-flex u-alignCenter">
+              <input type="checkbox" value="remember" class="u-rSpace--2"> 
+              Remember me
+            </p>
           </form>
         </div>
       </div>
