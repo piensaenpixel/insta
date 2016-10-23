@@ -263,7 +263,7 @@
     padding-top: 120px;
   }
   .Login .u-bSpace--2 {
-    margin-bottom: 12px;
+    margin-bottom: 16px;
   }
   .Navigation {
     position: absolute;
@@ -537,5 +537,23 @@
     bottom: 0;
     left: 0;
     padding: 64px 24px;
+  }
+  .Login .title2 {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 22px;
+  }
+  .Login .p1 {
+    font-size: 15px;
+    line-height: 24px;
+  }
+  .Login .verify-mobile {
+    margin-top: 12px;
+  }
+  .Login .Login-confirmItem {
+    margin-left: 16px;
+    &:first-child {
+      margin-left: 0;
+    }
   }
 }
