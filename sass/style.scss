@@ -1245,3 +1245,46 @@ pre[class*=language-], .token.operator{
     box-shadow: none;
   }
 }
+
+
+.Blog-containHome {
+  .img-responsive {
+    width: 100%;
+  }
+  a {
+    color: $dark;
+  }
+  .row {
+    margin-bottom: 20px;
+
+    > .row {
+      @include display-flex();
+      margin-right: -20px;
+      margin-left: -20px;
+      .col-sm-6 {
+        flex: 50%;
+        margin-right: 20px;
+        margin-left: 20px;
+      }
+      .col-sm-12 {
+        flex: 1;
+        margin-right: 20px;
+        margin-left: 20px;
+      }
+    }
+  }
+  .font-default {
+    margin: 8px 0 4px 0;
+    font: 20px 'BrandonText-Bold'
+  }
+  .mb small {
+    font: 400 15px/24px 'Open Sans';
+    color: #6a7785;
+  }
+  .notfit {
+    font: 26px 'BrandonText-Bold';
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+}
+
