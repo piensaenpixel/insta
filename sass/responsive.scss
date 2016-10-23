@@ -24,11 +24,18 @@
 
 
 @media (max-width: 759px) {
+  .title2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
   .Header-homeMedia {
-    display: none;
+    top: 50%;
+    right: -152%;
+    width: 200%;
+    margin-top: -189px;
   }
   .section {
-    padding: 48px 0;
+    padding: 64px 0;
   }
   .Browser-media img {
     width: 100%;
@@ -56,27 +63,28 @@
     }
   }
   .section--useCases {
-    background: none;
+    background: #f9f9f9;
     img {
-      width: 100%;
-      margin-left: -100px;
+      width: 150%;
+      margin-left: -200px;
       margin-bottom: 40px;
+
     }
     .u-flex {
       display: block;
     }
   }
   .Grid-column.list-industriesitem {
-    margin-bottom: 48px;
+    margin-bottom: 24px;
+  }
+  .list-industriesitemlink .u-rSpace--2 {
+    margin-right: 12px;
   }
   .Footer-list {
     margin-bottom: 40px;
   }
   .Footer-suscription .Container {
     @include flex-direction(column);
-  }
-  .Footer-suscription .Footer-form {
-    margin-bottom: 40px;
   }
   pre.line-numbers {
     padding-left: 0 !important;
@@ -113,6 +121,7 @@
   }
   .Button {
     width: 100%;
+    text-align: center;
   }
   .Header--contact {
     padding-top: 0;
@@ -124,9 +133,14 @@
   .Header-container {
     margin: 0;
   }
+  .Carousel-home {
+    margin-top: 0;
+    padding-bottom: 0;
+  }
   .Carousel-homeActions {
     @include flex-direction(column);
     width: 100%;
+    margin-top: 236px;
   }
   .list-buttonsitem {
     margin-right: 0;
@@ -171,6 +185,7 @@
   }
   .List-buttons {
     @include flex-direction(column);
+    margin-top: 28px;
   }
   .RatesInfo {
     width: 100%;
@@ -308,13 +323,12 @@
   }
 
   .section-blog .owl-controls {
-    left: 0 !important;
-    right: 0 !important;
-    bottom: 20px !important;
+    display: none;
   }
   
   .section-blog .owl-pagination {
     @include justify-content(center);
+    display: none;
   }
   .List-moduleDevelopersItem {
     margin-bottom: 20px;
@@ -327,4 +341,57 @@
     @include align-items(center);
   }
 
+  .ContactList {
+    flex-direction: column;
+    .ContactList-item {
+      border-left: 0;
+      border-top: 1px solid #f5f5f5;
+      &:first-child {
+        border-top: 0;
+      }
+    }
+  }
+  .LabelStep-error .LabelStep-errorInfo {
+    display: none;
+  }
+
+
+  .Blog-containHome {
+    .row {
+      > .row {
+        @include flex-direction(column);
+        margin-bottom: 20px;
+        .col-sm-6 {
+          flex: 1;
+          margin-bottom: 20px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .ListFeatures {
+    margin-bottom: 0;
+  }
+  .section-blog .section--blueDark {
+    padding: 64px 0;
+  }
+  .Footer-share {
+    display: none;
+  }
+  .Footer-suscription {
+    padding: 24px 0;
+  }
+  .Module-api {
+    display: none;
+  }
+  .title1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .Header--home .owl-pagination {
+    display: none;
+  }
 }

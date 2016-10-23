@@ -20,7 +20,7 @@
   <script src="js/prism.js"></script>
 
   <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.full.js"></script>
   <link href="css/select2.css" rel="stylesheet" />
   <link href="css/responsive.css" rel="stylesheet" />
 
@@ -84,7 +84,7 @@
             <a href="#">Log in</a>
           </li>
           <li class="Menu-item Menu-item--button">
-            <button class="Button Button--signup">Sign up</button>
+            <a href="#" class="Button Button--signup">Sign up</a>
           </li>
         </ul>
       </div>
@@ -120,10 +120,10 @@
           <p class="p1 txtwhite u-bSpace--6 ">Lookup contiene la información más precisa del mundo en lo que a números de teléfono respecta. Completa los datos que tienes sobre tus números y limpia tu base de datos con facilidad</p>
           <ul class="Carousel-homeActions u-flex">
             <li class="list-buttonsitem">
-              <button class="Button Button--purple">Try it for free</button>
+              <a href="#" class="Button Button--purple">Try it for free</a>
             </li>
             <li class="list-buttonsitem">
-              <button class="Button Button-secondary Button-secondary--negative">Call +34 914 898 623</button>
+              <a href="#" class="Button Button-secondary Button-secondary--negative">Call +34 914 898 623</a>
             </li>
           </ul>
         </div>
@@ -225,7 +225,7 @@
           <h2 class="title5 title5--spacing txtwhite60 u-bSpace--3">API</h2>
           <h1 class="title2 txtwhite u-bSpace--3">CON NUESTRA API PUEDES INTEGRARLO EN TU APP EN UN PIS PAS.</h1>
           <p class="p1 txtwhite u-bSpace--6">Integra la API de Instasent en tu propia aplicación / web o software y podrás enviar SMS masivos directamente desde ella. Echa un vistazo a la página de desarrolladores y mira todo lo que puedes llegar a hacer con nuestra API.</p>
-          <button class="Button Button-secondary Button-secondary--negative">Ver Documentación</button>
+          <a href="#" class="Button Button-secondary Button-secondary--negative">Ver Documentación</a>
         </div>
         <div class="Grid-column Grid-column--6">
           <div class="Module-api">
@@ -299,10 +299,10 @@
       </div>
       <ul class="Carousel-homeActions u-flex u-tSpace--10">
         <li class="list-buttonsitem">
-          <button class="Button Button--whiteBlue2">Try it for free</button>
+          <a href="#" class="Button Button--whiteBlue2">Try it for free</a>
         </li>
         <li class="list-buttonsitem">
-          <button class="Button Button-secondary Button-secondary--negative">Call +34 914 898 623</button>
+          <a href="#" class="Button Button-secondary Button-secondary--negative">Call +34 914 898 623</a>
         </li>
       </ul>
     </div>
@@ -314,7 +314,7 @@
         <form class="Footer-form">
           <input type="text" placeholder="Suscribete a nuestra newsletter" class="Footer-formInput"/>
           <button class="Footer-formButton">
-            <p>Enviar</p>
+            <p class="txtdark2">Enviar</p>
           </button>
         </form>
         <ul class="u-flex u-alignCenter Footer-share">
@@ -440,6 +440,15 @@
             </ul>
           </li>
         </ul>
+        <div class="u-flex Grid-container u-tSpace--15 u-justifyEnd">
+          <div class="Country-selector Grid-column Grid-column--2 txtdark2">
+            <select name="select" class="select-country">
+              <option value="Spain">Spain</option> 
+              <option value="Spain">Spain</option>
+              <option value="Spain">Spain</option>
+            </select>
+          </div>
+        </div>
       </div>
     </div>
   </footer>

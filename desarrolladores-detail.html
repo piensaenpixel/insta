@@ -1,3 +1,4 @@
+
 <!DOCTYPE HTML><html>
 
 <head>
@@ -20,7 +21,7 @@
   <script src="js/prism.js"></script>
 
   <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.full.js"></script>
   <link href="css/select2.css" rel="stylesheet" />
 
 
@@ -29,7 +30,7 @@
 </head>
 
 <body>
-  <nav class="Navigation">
+  <nav class="Navigation Navigation--dark">
     <div class="Container u-flex u-justifySpace u-alignCenter">
       <div class="u-flex u-alignCenter">
         <p class="Brand">
@@ -85,7 +86,7 @@
             <a href="#">Log in</a>
           </li>
           <li class="Menu-item Menu-item--button">
-            <button class="Button Button--signup">Sign up</button>
+            <a href="#" class="Button Button--signup">Sign up</a>
           </li>
         </ul>
       </div>
@@ -113,7 +114,7 @@
     </ul>
   </nav>
 
-  <section class="section section--dark section--docs">
+  <section class="section section--docs">
     <div class="Container">
       <div class="u-flex Grid-container">
         <div class="Grid-column Grid-column--3">
@@ -171,58 +172,58 @@
         </div>
         <div class="Grid-column Grid-column--9 Docs-container">
 
-          <h1 class="title2 u-bspace--3 txtwhite">API BASICS</h1>
-          <p class="p1 u-bSpace--15 txtwhite60">Instasent uses a REST Api to send SMS</p>
+          <h1>API BASICS</h1>
+          <p>Instasent uses a REST Api to send SMS</p>
 
 
-          <h2 class="title3 u-bSpace--3 txtwhite">Root Endpoint</h2>
-          <p class="p2 u-bSpace--3 txtwhite60"><span class="Docs-codeSmall">http://api.instasent.com</span>
-          <p class="p2 u-bSpace--3 txtwhite60">Secure channel</p>
-          <p class="p2 u-bSpace--15 txtwhite60"><span class="Docs-codeSmall">https://api.instasent.com</span>
+          <h2>Root Endpoint</h2>
+          <pre>
+            <code class="language-javascript">
+              http://api.instasent.com
+            </code>
+          </pre>
+          <p>Secure channel</p>
+          <pre>
+            <code class="language-javascript">
+              https://api.instasent.com
+            </code>
+          </pre>
 
-          <h2 class="title3 u-bSpace--3 txtwhite">Authentication</h2>
-          <p class="p2 u-bSpace--5 txtwhite60">You need to specify your access token (api key) on each action. This api key can be created in your control panel.</p>
-          <h3 class="title4 u-bSpace--3 txtwhite">In a header</h3>
-          <div class="Docs-code u-bSpace--5">
-            <pre class="line-numbers">
-              <code class="language-javascript">
-                curl -H "Authorization: Bearer {token}" http(s)://api.instasent.com
-              </code>
-            </pre>
-          </div>
-          <h3 class="title4 u-bSpace--3 txtwhite">As a parameter</h3>
-          <div class="Docs-code u-bSpace--15">
-            <pre class="line-numbers">
-              <code class="language-javascript">
-                curl http(s)://api.instasent.com/?access_token=OAUTH-TOKEN
-              </code>
-            </pre>
-          </div>
+          <h2>Authentication</h2>
+          <p>You need to specify your access token (api key) on each action. This api key can be created in your control panel.</p> 
+          <h3>In a header</h3>
+          <pre class="line-numbers">
+            <code class="language-javascript">
+              curl -H "Authorization: Bearer {token}" http(s)://api.instasent.com
+            </code>
+          </pre>
+          <h3>As a parameter</h3>
+          <pre class="line-numbers">
+            <code class="language-javascript">
+              curl -H "Authorization: Bearer {token}" http(s)://api.instasent.com
+            </code>
+          </pre>
 
-          <h2 class="title3 u-bSpace--3 txtwhite">HTTP Verbs</h2>
-          <p class="p2 u-bSpace--3 txtwhite60">Instasent API use appropriate HTTP verbs for each action.</p>
-          <ul class="Docs-list p2 u-bSpace--15 txtwhite60">
-            <li class="u-bSpace--3">GET - Used for retrieving resources.</li>
-            <li class="u-bSpace--3">POST - Used for creating resources.</li>
-            <li class="u-bSpace--3">PUT - Used for replacing or updating resources or collections.</li>
-            <li class="u-bSpace--3">DELETE - Used for deleting resources.</li>
+          <h2>HTTP Verbs</h2>
+          <p>You need to specify your access token (api key) on each action. This api key can be created in your control panel.</p> 
+          <ul>
+            <li>GET - Used for retrieving resources.</li>
+            <li>POST - Used for creating resources.</li>
+            <li>PUT - Used for replacing or updating resources or collections.</li>
+            <li>DELETE - Used for deleting resources.</li>
           </ul>
 
-          <h2 class="title3 u-bSpace--3 txtwhite">General Client Errors</h2>
-          <p class="p2 u-bSpace--3 txtwhite60">These are the common possible client errors</p>
-          <p class="p2 u-bSpace--3 txtwhite60">1 - Sending invalid JSON will result in a 400 <span class="Docs-codeSmall">Bad Request response</span></p>
-          <div class="Docs-code u-bSpace--15">
-            <pre class="line-numbers">
-              <code class="language-javascript">
-                HTTP/1.1 400 Bad Request
-                Content-Length: 35
+          <h2>General Client Errors</h2>
+          <p>These are the common possible client errors</p>
+          <p>1 - Sending invalid JSON will result in a 400 Bad Request response</p>
+          <pre class="line-numbers">
+            <code class="language-javascript">
+              HTTP/1.1 400 Bad Request
+              Content-Length: 35
 
-                {"message":"Problems parsing JSON"}
-              </code>
-            </pre>
-          </div>
-
-
+              {"message":"Problems parsing JSON"}
+            </code>
+          </pre>
 
         </div>
       </div>
@@ -236,7 +237,7 @@
         <form class="Footer-form">
           <input type="text" placeholder="Suscribete a nuestra newsletter" class="Footer-formInput"/>
           <button class="Footer-formButton">
-            <p>Enviar</p>
+            <p class="txtdark2">Enviar</p>
           </button>
         </form>
         <ul class="u-flex u-alignCenter Footer-share">
@@ -362,6 +363,15 @@
             </ul>
           </li>
         </ul>
+        <div class="u-flex Grid-container u-tSpace--15 u-justifyEnd">
+          <div class="Country-selector Grid-column Grid-column--2 txtdark2">
+            <select name="select" class="select-country">
+              <option value="Spain">Spain</option> 
+              <option value="Spain">Spain</option>
+              <option value="Spain">Spain</option>
+            </select>
+          </div>
+        </div>
       </div>
     </div>
   </footer>

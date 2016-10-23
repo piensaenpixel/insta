@@ -11,6 +11,12 @@ $(document).ready(function() {
     placeholder: "Select a state",
     templateResult: formatState
   });
+  $(".select-country").select2({ 
+    placeholder: "Select a state",
+    templateResult: formatState,
+    minimumResultsForSearch: Infinity,
+     containerCssClass : "select-countryInput"
+  });
 
 
 

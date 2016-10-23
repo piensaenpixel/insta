@@ -24,6 +24,40 @@
     border: 1px solid rgba(255,255,255,0.20);
   }
 
+
+.LabelStep-error {
+  position: relative;
+  background-image: url(#{$routeImages}/error.svg);
+  background-repeat: no-repeat;
+  background-position: 95% center;
+  .InputText {
+    width: calc(100% - 5% - 10px);
+  }
+  .LabelStep-errorInfo {
+    display: block;
+  }
+}
+.LabelStep-errorInfo {
+  display: none;
+  position: absolute;
+  padding: 4px 8px;
+  background: #203248;
+  border-radius: 4px;
+  left: calc(100% + 20px);
+  top: 6px;
+  white-space: nowrap;
+  &:before {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-right: 6px solid #203248;
+    left: -12px;
+    top: 11px;
+  }
+}
+
 .InputText {
   font: 28px/36px 'brandon_textbold';
   padding: 0;
@@ -73,4 +107,30 @@
 }
 .FormRegular .digits {
   text-align: center;
+}
+
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #dddddd;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  &:focus {
+    outline: none;
+  }
+  &:checked:before {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: #00a8ff;
+    border-radius: 50%;
+    left: 4px;
+    top: 4px;
+  }
+
 }

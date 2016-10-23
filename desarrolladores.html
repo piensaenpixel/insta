@@ -20,7 +20,7 @@
   <script src="js/prism.js"></script>
 
   <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.full.js"></script>
   <link href="css/select2.css" rel="stylesheet" />
 
 
@@ -85,7 +85,7 @@
             <a href="#">Log in</a>
           </li>
           <li class="Menu-item Menu-item--button">
-            <button class="Button Button--signup">Sign up</button>
+            <a href="#" class="Button Button--signup">Sign up</a>
           </li>
         </ul>
       </div>
@@ -186,7 +186,7 @@
         <form class="Footer-form">
           <input type="text" placeholder="Suscribete a nuestra newsletter" class="Footer-formInput"/>
           <button class="Footer-formButton">
-            <p>Enviar</p>
+            <p class="txtdark2">Enviar</p>
           </button>
         </form>
         <ul class="u-flex u-alignCenter Footer-share">
@@ -312,6 +312,15 @@
             </ul>
           </li>
         </ul>
+        <div class="u-flex Grid-container u-tSpace--15 u-justifyEnd">
+          <div class="Country-selector Grid-column Grid-column--2 txtdark2">
+            <select name="select" class="select-country">
+              <option value="Spain">Spain</option> 
+              <option value="Spain">Spain</option>
+              <option value="Spain">Spain</option>
+            </select>
+          </div>
+        </div>
       </div>
     </div>
   </footer>
