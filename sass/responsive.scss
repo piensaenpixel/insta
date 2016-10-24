@@ -324,13 +324,12 @@
     cursor: pointer;
   }
   .Verify-item {
-    margin-bottom: 24px;
     &:last-child {
       margin-bottom: 0;
     }
     .Grid-column  {
       @include justify-content(space-between);
-      margin-bottom: 10px;
+      margin-bottom: 16px;
     }
     .Grid-column--1 {
       @include flex(1);
@@ -338,6 +337,12 @@
       &:first-child {
         margin-left: 0;
       }
+    }
+    .u-bSpace--5 {
+      margin-bottom: 0;
+    }
+    .title4.u-bSpace--2 {
+      margin-bottom: 8px;
     }
   }
 
@@ -555,5 +560,8 @@
     &:first-child {
       margin-left: 0;
     }
+  }
+  .Verify-item.is-disabled {
+    display: none;
   }
 }

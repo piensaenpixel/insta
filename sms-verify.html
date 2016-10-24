@@ -195,7 +195,7 @@
           <p class="p1 txtdark">Just integrate our API or SDK into your app and let Verify do the rest. Discover how we consistently deliver one of the highest verification rates in the industry.</p>
         </div>
       </div>
-      <ol class="u-flex Grid-container u-tSpace--15 Verify">
+      <ol class="u-flex Grid-container u-tSpace--15 Verify u-showDesktop u-showDesktop--flex">
         <li class="Verify-item Grid-column Grid-column--4">
           <p class="Step u-flex u-alignCenter u-justifyCenter u-bSpace--4 title4">1</p>
           <h3 class="title4 txtdark u-bSpace--2">Introduce el número de móvil</h3>
@@ -259,6 +259,79 @@
           </div>
         </li>
       </ol>
+      <div class="u-flex Grid-container u-tSpace--15 Verify u-showMobile">
+        <ol class="u-flex u-bSpace--8">
+          <li class="u-rSpace--16">
+            <p class="Step u-flex u-alignCenter u-justifyCenter u-bSpace--4 title4">1</p>
+          </li>
+          <li class="u-rSpace--16 is-disabled">
+            <p class="Step u-flex u-alignCenter u-justifyCenter u-bSpace--4 title4">2</p>
+          </li>
+          <li class="is-disabled">
+            <p class="Step u-flex u-alignCenter u-justifyCenter u-bSpace--4 title4">3</p>
+          </li>
+        </ol>
+        <ul>
+          <li class="Verify-item Grid-column Grid-column--4">
+            <h3 class="title4 txtdark u-bSpace--2">Introduce el número de móvil</h3>
+            <form class="FormRegular">
+              <div class="Grid-container Grid-container--noMargin u-flex">
+                <div class="Grid-column Grid-column--2">
+                  <select name="select" class="bg">
+                    <option value="Spain">Spain</option> 
+                    <option value="Spain">Spain</option>
+                    <option value="Spain">Spain</option>
+                  </select>
+                </div>
+                <div class="Grid-column Grid-column--2">
+                  <label class="LabelStep LabelStep--white u-bSpace--5">
+                    <input class="InputText InputText--full" type="text" placeholder="Número de móvil" />
+                  </label>
+                </div>
+              </div>
+              <button class="Button Button--full Button--purple">Send test verify code</button>
+            </form>
+          </li>
+          <li class="Verify-item is-disabled Grid-column Grid-column--4">
+
+            <h3 class="title4 txtdark u-bSpace--2">Envío del SMS</h3>
+            <form class="FormRegular">
+              <div class="u-flex Grid-container u-bSpace--5">
+                <div class="Grid-column Grid-column--1">
+                  <label class="LabelStep LabelStep--white">
+                    <input class="InputText InputText--full" disabled />
+                  </label>
+                </div>
+                <div class="Grid-column Grid-column--1">
+                  <label class="LabelStep LabelStep--white">
+                    <input class="InputText InputText--full" disabled />
+                  </label>
+                </div>
+                <div class="Grid-column Grid-column--1">
+                  <label class="LabelStep LabelStep--white">
+                    <input class="InputText InputText--full" disabled />
+                  </label>
+                </div>
+                <div class="Grid-column Grid-column--1">
+                  <label class="LabelStep LabelStep--white">
+                    <input class="InputText InputText--full" disabled />
+                  </label>
+                </div>
+              </div>
+              <button class="Button Button--full Button--purple" disabled></button>
+            </form>
+          </li>
+          <li class="Verify-item is-disabled Grid-column Grid-column--4">
+            <h3 class="title4 txtdark u-bSpace--2">Verificación</h3>
+            <p class="p2 txtdark2 u-bSpace--8">Tus clientes podrán iniciar la sesión con el código extra de autenticación.</p>
+            <div class="u-flex u-justifyCenter">
+              <img src="img/verify.svg" />
+              <!--<img src="img/verify-ok.svg" />-->
+              <!--<img src="img/verify-fail.svg" />-->
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
   </section>
 
