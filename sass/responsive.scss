@@ -211,6 +211,9 @@
   .RatesInfo {
     width: 100%;
   }
+  .section--blue .RatesInfo-form {
+    margin-top: 0;
+  }
   .RatesInfo-form {
     @include flex-direction(column);
     width: 100%;
@@ -287,32 +290,28 @@
     bottom: 0;
     left: 0;
     box-sizing: border-box;
-    padding: 60px 28px 28px 28px;
+    padding: 60px 28px;
     z-index: 25;
   }
   .NavigationMobile-menu {
+    @include display-flex();
+    @include flex-direction(column);
+    @include justify-content(space-between);
+    height: 100%;
     text-align: center;
-    font: 18px OpenSans;
+    font: 18px 'Open Sans';
     a {
       color: #fff
     }
   }
-  .NavigationMobile-menuItem {
-    margin-bottom: 40px;
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-  .NavigationMobile-menu--actions {
-    margin-top: 40px;
-    &:before {
-      width: 150px;
-      margin: 0 auto 40px auto;
-      height: 1px;
-      background: rgba(255, 255, 255, 0.10);
-      content: '';
-      display: block;
-    }
+  .NavigationMobile-menuItem hr {
+    width: 150px;
+    margin: 0 auto;
+    background: rgba(255,255,255,.1);
+    display: block;
+    padding: 0;
+    height: 1px;
+    border: 0;
   }
   .NavigationMobile-close {
     position: absolute;
@@ -413,6 +412,13 @@
   .Footer-suscription {
     padding: 24px 0;
   }
+  .Footer-list {
+    margin-top: -32px;
+  }
+  .Footer-listItem {
+    margin-bottom: 20px;
+    font-size: 15px;
+  }
   .Module-api {
     display: none;
   }
@@ -422,25 +428,6 @@
   }
   .Header--home .owl-pagination {
     display: none;
-  }
-  .Footer .section {
-    padding: 32px 0;
-    .Grid-column--2 {
-      .Footer-list {
-        display: none;
-      }
-      h2 {
-        display: none;
-      }
-    }
-    .Grid-column--2:first-child {
-      .Footer-list {
-        display: block;
-      }
-    } 
-  }
-  .Footer-listItem {
-    font: 400 15px/40px 'Open Sans';
   }
 
   .Header--inside {
