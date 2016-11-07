@@ -908,10 +908,15 @@ pre[class*=language-], .token.operator{
   right: -177%;
 }
 
-
-.Blog-metadata {
+.Blog-info {
+  @include display-flex();
+  @include justify-content(space-between);
+  @include align-items(center);
   padding-top: 20px;
   border-top: 1px solid $dark3;
+}
+
+.Blog-metadata {
 }
 
 .Blog-metadataTagsItem {
