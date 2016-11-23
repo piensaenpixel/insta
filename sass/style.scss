@@ -902,10 +902,9 @@ pre[class*=language-], .token.operator{
 
 
 .Header-homeMedia {
-  position: absolute;
-  position: absolute;
-  top: -132px;
-  right: -177%;
+  position: fixed;
+  top: 88px;
+  right: -1482px;
 }
 
 .Blog-info {
@@ -1124,19 +1123,21 @@ pre[class*=language-], .token.operator{
     color: #00a8ff !important;
   }
   p {
-    margin: 0 0 12px 0;
-    color: $dark2;
-    font: 15px/24px 'Open Sans'
+    color: $dark;
+    margin: 0 0 32px;
+    font: 18px/28px "Open Sans";
   }
   h3 {
-    font: 400 18px/28px 'Open Sans';
+    font: 22px/30px brandon_textbold;
     color: $dark;
-    margin: 24px 0 12px 0;
+    margin: 24px 0 12px;
+    text-transform: uppercase;
   }
   h2 {
-    line-height: 1.2em;
+    font: 30px/40px brandon_textblack !important;
     color: $dark;
-    margin: 0 0 32px 0;
+    margin: 0 0 12px;
+    text-transform: uppercase;
   }
   .img-responsive {
     width: 100%;
@@ -1144,12 +1145,13 @@ pre[class*=language-], .token.operator{
   }
   blockquote {
     padding: 12px 24px;
-    margin: 0 0 24px;
+    margin: 0 0 48px;
     font-size: 20px;
-    border-left: 5px solid #eeeeee;
+    border-left: 5px solid #eee;
     p {
       font: 400 18px/28px 'Open Sans';
       color: $dark;
+      margin: 0;
     }
   }
   hr {
@@ -1158,6 +1160,20 @@ pre[class*=language-], .token.operator{
   }
   .mt {
     padding-top: 32px;
+  }
+
+  ul {
+    margin-left: 32px;
+    margin-bottom: 48px;
+    list-style-type: disc;
+  }
+  p + ul {
+    margin-top: -12px;
+  }
+  li {
+    margin: 0 0 12px 0;
+    color: $dark;
+    font: 18px/28px 'Open Sans'
   }
 }
 
@@ -1174,24 +1190,27 @@ pre[class*=language-], .token.operator{
 
 
 .Industries-contain {
-  font-family: 'Open Sans';
+  font: 400 18px/28px 'Open Sans';
+  color: $dark;
   a {
     color: #00a8ff !important;
   }
   p {
-    margin: 0 0 12px 0;
-    color: $dark2;
-    font: 15px/24px 'Open Sans'
+    margin: 0 0 32px 0;
+    color: $dark;
+    font: 18px/28px 'Open Sans'
   }
   h3 {
-    font: 400 18px/28px 'Open Sans';
+    font: 22px/30px 'brandon_textbold';
     color: $dark;
     margin: 24px 0 12px 0;
+    text-transform: uppercase;
   }
   h2 {
-    line-height: 1.2em;
+    font: 30px/40px 'brandon_textblack';
     color: $dark;
-    margin: 0 0 32px 0;
+    margin: 0 0 12px 0;
+    text-transform: uppercase;
   }
   .img-responsive {
     width: 100%;
@@ -1199,12 +1218,13 @@ pre[class*=language-], .token.operator{
   }
   blockquote {
     padding: 12px 24px;
-    margin: 0 0 24px;
+    margin: 0 0 48px;
     font-size: 20px;
     border-left: 5px solid #eeeeee;
     p {
       font: 400 18px/28px 'Open Sans';
       color: $dark;
+      margin: 0;
     }
   }
   hr {
@@ -1213,19 +1233,24 @@ pre[class*=language-], .token.operator{
     margin: 48px 0;
   }
 
+
   ul {
     margin-left: 32px;
     margin-bottom: 48px;
   }
+  p + ul {
+    margin-top: -12px;
+  }
   li {
-    margin: 0 0 4px 0;
-    color: $dark2;
-    font: 15px/24px 'Open Sans'
+    margin: 0 0 12px 0;
+    color: $dark;
+    font: 18px/28px 'Open Sans'
   }
   .row {
     margin: 0 -20px 12px -20px;
-    color: $dark2;
-    font: 15px/24px 'Open Sans';
+    font: 400 18px/28px 'Open Sans';
+    color: $dark;
+
     display: flex;
     .col-sm-6 {
       margin: 0 20px;
@@ -1236,7 +1261,8 @@ pre[class*=language-], .token.operator{
     height: 10px;
     box-shadow: none;
     overflow: hidden;
-    margin-bottom: 24px;
+    margin-bottom: 48px;
+    margin-top: -20px;
     border-radius: 3px;
   }
   .progress-bar {
