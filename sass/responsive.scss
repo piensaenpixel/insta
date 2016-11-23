@@ -46,6 +46,9 @@
   .section {
     padding: 64px 0;
   }
+  .section--blog {
+    padding: 100px 0 64px;
+  }
   .Browser-media img {
     width: 100%;
   }
@@ -623,4 +626,12 @@
   .Blog-metadata {
     margin-bottom: 10px;
   }
+
+  .Blog-contain h2 {
+    font: 22px/30px 'brandon_textblack' !important;
+  }
+  .Blog-contain h3 {
+    font: 18px/30px 'brandon_textbold';
+  }
+
 }
