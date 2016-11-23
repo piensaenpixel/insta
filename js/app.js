@@ -154,10 +154,12 @@ $(window).bind('scroll', function() {
   var navHeight = $( '.Navigation' ).innerHeight();
   if ($(window).scrollTop() > navHeight) {
     $('.Navigation').addClass('is-fixed');
+    $('.Header--home').addClass('is-fixed');
     $('.js-dropdownProducts').removeClass('is-show');
   }
   else {
     $('.Navigation').removeClass('is-fixed');
+    $('.Header--home').removeClass('is-fixed');
   }
 });
 

@@ -110,6 +110,9 @@
     @include justify-content(center);
   }
 }
+.Header--home.is-fixed {
+  padding-top: 171px;
+}
 
 .Header--inside {
   background-color: $dark;
