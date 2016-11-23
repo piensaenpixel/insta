@@ -898,11 +898,8 @@ pre[class*=language-], .token.operator{
   @include align-items(center);
 }
 
-
-
-
 .Header-homeMedia {
-  position: fixed;
+  position: absolute;
   top: 88px;
   right: -1482px;
 }
